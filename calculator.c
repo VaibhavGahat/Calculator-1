@@ -1,40 +1,37 @@
 #include<stdio.h>
 int main()
 {
-   float num1;
-   float num2;
+   int num1;
+   int num2;
    char operation;
-   float result;
+   int result;
 
    printf("Enter the first number:");
-   scanf("%f",&num1);
-
-   printf("Enter the operation:");
-   scanf(" %c",&operation);
+   scanf("%d",&num1);
 
    printf("Enter the secoend number:");
-   scanf("%f",&num2);
+   scanf("%d",&num2);
+   
+   printf("Enter the operation:");
+   scanf(" %c",&operation);
 
    switch(operation)
    {
       case '+':
-      result=num1+num2;
-               
+       result=num1+num2;         
       break;
-       case '-':
-       result=num1-num2;
-   
+      case '-':
+       result=num1-num2;   
       break;
-       case '*':
-       result=num1*num2;
-             
+      case '*':
+       result=num1*num2;      
       break;
-       case '/':
-       result=num1/num2;
-             
+      case '/':
+       result=num1/num2;       
       break;
       default:printf("No result");
    }
-   printf("%f",result);
+   printf("So Your Result Is Here:");
+   printf("%d",result);
    return 0;
 }
