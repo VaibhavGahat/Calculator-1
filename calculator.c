@@ -1,16 +1,16 @@
 #include<stdio.h>
 int main()
 {
-   int num1;
-   int num2;
+   int A;
+   int B;
    char operation;
    int result;
 
    printf("Enter the first number:");
-   scanf("%d",&num1);
+   scanf("%d",&A);
 
    printf("Enter the secoend number:");
-   scanf("%d",&num2);
+   scanf("%d",&B);
    
    printf("Enter the operation:");
    scanf(" %c",&operation);
@@ -18,16 +18,16 @@ int main()
    switch(operation)
    {
       case '+':
-       result=num1+num2;         
+       result=A+B;         
       break;
       case '-':
-       result=num1-num2;   
+       result=A-B;   
       break;
       case '*':
-       result=num1*num2;      
+       result=A*B;      
       break;
       case '/':
-       result=num1/num2;       
+       result=A/B;       
       break;
       default:printf("No result");
    }
